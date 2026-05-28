@@ -1,8 +1,8 @@
-# SCP Sale Agent — Owner's Quick Start
+# SCP Sale Agent — Doug's Quick Start
 
-A senior banker, exit-planning coach, and deal quarterback rolled into one,
-pre-loaded with foundry-specific M&A judgment for SCP. Talk to it in plain
-English — it runs inside Claude, with no app to install.
+Doug — this is a senior banker, exit-planning coach, and deal quarterback
+rolled into one, pre-loaded with foundry-specific M&A judgment for SCP. Talk
+to it in plain English — it runs inside Claude, with no app to install.
 
 ---
 
