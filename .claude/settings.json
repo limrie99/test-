@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./memory/**)",
+      "Read(./.claude/skills/**)",
+      "Read(./.claude/agents/**)",
+      "Read(./CLAUDE.md)",
+      "Read(./README.md)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+# Confidential SCP uploads — NEVER commit real financials or customer files.
+# Only the README and .gitkeep stay tracked so the folder exists.
+memory/scp/uploads/*
+!memory/scp/uploads/.gitkeep
+!memory/scp/uploads/README.md
+
+# Local agent / Claude state
+.claude/settings.local.json
+.claude/state/
+
+# Editor / OS / runtime
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.local
+.env.*.local
