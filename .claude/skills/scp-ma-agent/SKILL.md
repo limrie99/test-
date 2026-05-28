@@ -56,6 +56,15 @@ Memory lives in `memory/scp/`. Treat it as the deal's source of truth.
   management depth, ownership/cap table, owner's personal & financial goals.
 - `memory/scp/deal-log.md` — a running, dated log of decisions, valuation runs,
   buyer-list changes, advisor conversations, and open action items.
+- `memory/scp/add-backs.md` — live EBITDA bridge (reported → adjusted) with
+  QoE-survival notes per line.
+- `memory/scp/buyers.md` — buyer outreach tracker (A/B/C list with status,
+  dates, contacts).
+- `memory/scp/offers.md` — offer / LOI comparison rubric (price + certainty + fit).
+- `memory/scp/uploads/` — confidential source documents from the owner
+  (financials, customer-by-revenue, environmental, equipment). **Gitignored** —
+  contents never get committed. Read freely; don't echo raw figures into PRs or
+  commit messages.
 
 Rules:
 - **Write to memory whenever you learn something material** — don't wait until
@@ -99,10 +108,12 @@ rely on memory of it. Each file holds the data tables and the judgment.
 
 | Capability | What you produce | Reference file |
 |---|---|---|
-| **Readiness assessment** | Score SCP on Value Builder's 8 drivers + EPI's 4 C's + a foundry overlay; output a value gap (current vs. potential multiple) and 90-day-sprint action items | `references/readiness-assessment.md` |
-| **Valuation** | A "valuation football": GF Data foundry-segment comps, DCF/WACC, public comps (discounted), and an LBO/PE floor — with a defensible EV range and the add-back bridge | `references/valuation.md` |
-| **Buyer universe** | A tiered A/B/C buyer list (named strategics, PE platforms, family offices) annotated with fit, backing, recent deals, and who to call first — adapted to SCP's alloy mix | `references/buyer-universe.md` |
+| **Readiness assessment** | Score SCP on Value Builder's 8 drivers + EPI's 4 C's + a foundry overlay; output a value gap (current vs. potential multiple) and 90-day-sprint action items | `references/readiness-assessment.md` (sample output: `assets/examples/readiness-scorecard-example.md`) |
+| **Valuation** | A "valuation football": GF Data foundry-segment comps, DCF/WACC, public comps (discounted), and an LBO/PE floor — with a defensible EV range and the add-back bridge | `references/valuation.md` + `memory/scp/add-backs.md` (sample output: `assets/examples/valuation-football-example.md`) |
+| **CIM / teaser drafting** | A 60–100pp CIM drafted from `profile.md` + `add-backs.md`, and a 1-page anonymized teaser for pre-NDA outreach; senior-banker review before distribution | `assets/cim-outline.md`, `assets/teaser-template.md` |
+| **Buyer universe** | A tiered A/B/C buyer list (named strategics, PE platforms, family offices) annotated with fit, backing, recent deals, and who to call first — adapted to SCP's alloy mix | `references/buyer-universe.md` + live tracker `memory/scp/buyers.md` |
 | **Process plan** | The 7-phase sell-side timeline with tasks, durations, and what to prepare when | `references/process-playbook.md` |
+| **Offer / LOI evaluation** | Score each IOI/LOI on price + certainty + non-price fit; recommend counters | `references/process-playbook.md` (rubric) + live `memory/scp/offers.md` |
 | **Advisor selection & fees** | Which advisor tier/firm fits SCP, and modeled fees (Classic / Modified / Double Lehman + retainer + tail) | `references/advisors-and-fees.md` |
 | **Transaction-cost model** | All-in cost estimate (advisor, QoE, legal, tax, environmental, R&W, etc.) as % of EV for SCP's deal size | `references/transaction-costs.md` |
 | **Tax & structure** | Asset vs. stock, §338(h)(10), F-reorg, §1202 QSBS, owner-level mitigation — what fits an S-corp foundry sale | `references/tax-structuring.md` |

@@ -29,10 +29,24 @@ assess readiness, build a buyer list, plan the process, or "use the newest data.
 
 ## Layout
 ```
-.claude/skills/scp-ma-agent/   Skill: SKILL.md + assets/ (intake) + references/
-.claude/agents/                foundry-market-research subagent (live data refresh)
-memory/scp/                     Deal memory: profile.md + deal-log.md (source of truth)
-CLAUDE.md                       How the agent is wired together
+.claude/skills/scp-ma-agent/
+  SKILL.md                       Orchestration brain
+  assets/intake-meeting.md       Meeting-style owner-intake script
+  assets/cim-outline.md          60–100pp CIM section template
+  assets/teaser-template.md      1-page anonymized teaser
+  assets/examples/               Worked sample outputs (valuation football, scorecard)
+  references/                    Foundry/M&A judgment (8 files)
+.claude/agents/                  foundry-market-research subagent
+.claude/settings.json            Pre-allowed reads + safe bash commands
+memory/scp/
+  profile.md                     Structured company profile
+  add-backs.md                   Live EBITDA bridge
+  buyers.md                      Buyer outreach tracker (A/B/C)
+  offers.md                      Offer / LOI comparison rubric
+  deal-log.md                    Dated running log
+  uploads/                       Confidential source docs (GITIGNORED)
+CLAUDE.md                        How the agent is wired together
+.gitignore                       Keeps uploads out of the repo
 ```
 
 ## Note
