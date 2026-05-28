@@ -39,7 +39,7 @@ data, where saved data lives, confidentiality, and customizing the agent.
   assets/cim-outline.md          60–100pp CIM section template
   assets/teaser-template.md      1-page anonymized teaser
   assets/examples/               Worked sample outputs (valuation football, scorecard)
-  references/                    Foundry/M&A judgment (8 files)
+  references/                    Foundry/M&A judgment (9 files, incl. owner-facing glossary)
 .claude/agents/                  foundry-market-research subagent
 .claude/settings.json            Pre-allowed reads + safe bash commands
 memory/scp/
@@ -47,6 +47,9 @@ memory/scp/
   add-backs.md                   Live EBITDA bridge
   buyers.md                      Buyer outreach tracker (A/B/C)
   offers.md                      Offer / LOI comparison rubric
+  owner-readiness.md             Owner's personal & financial readiness (three legs)
+  tax-model.md                   Net-to-seller comparison across deal structures
+  advisor-shortlist.md           Banker beauty-contest scorecard
   deal-log.md                    Dated running log
   uploads/                       Confidential source docs (GITIGNORED)
 CLAUDE.md                        How the agent is wired together

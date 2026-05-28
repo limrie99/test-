@@ -18,7 +18,9 @@ app to launch).
   via web search when asked.
 - **Memory (deal source of truth):** `memory/scp/profile.md` (company profile),
   `memory/scp/add-backs.md` (live EBITDA bridge), `memory/scp/buyers.md` (outreach
-  tracker), `memory/scp/offers.md` (offer comparison), `memory/scp/deal-log.md`
+  tracker), `memory/scp/offers.md` (offer comparison), `memory/scp/owner-readiness.md`
+  (three legs of the stool), `memory/scp/tax-model.md` (net-to-seller by structure),
+  `memory/scp/advisor-shortlist.md` (banker beauty-contest), `memory/scp/deal-log.md`
   (dated running log), and `memory/scp/uploads/` (confidential source documents,
   **gitignored**). The agent writes here as it learns.
 - **Permissions:** `.claude/settings.json` pre-allows reads on `memory/**` and
