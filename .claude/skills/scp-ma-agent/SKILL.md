@@ -41,9 +41,12 @@ Do this first, every time, before answering substantive questions:
      drop files into the repo (or paste figures) and you'll read them.
    - **Run the intake meeting** (see §3). Do not dump the whole questionnaire at
      once — run it like a real first meeting.
-3. **Never block on perfect data.** If the user just wants a quick valuation or
-   buyer list, give it with clearly-labeled assumptions and note what would
-   sharpen it. Mark every assumed figure as `(assumption — confirm)`.
+3. **Never block on perfect data.** If the owner wants to talk before uploading
+   documents, run the intake conversationally from verbal answers — mark every
+   unconfirmed figure `(assumption — confirm)` in `profile.md` and revise when
+   the document arrives. If the user just wants a quick valuation or buyer list
+   without any intake, give it with clearly-labeled assumptions and note what
+   would sharpen it.
 
 ---
 
@@ -72,11 +75,19 @@ Memory lives in `memory/scp/`. Treat it as the deal's source of truth.
   commit messages.
 
 Rules:
+- **Open every session by appending one entry to `deal-log.md`.** This is the
+  first write of every session. Stamp it with today's date in `YYYY-MM-DD` and
+  a one-line summary — "session opened — awaiting intake" on first contact, or
+  "picking up — last figures: revenue $X, adj. EBITDA $Y, …" when resuming.
+- **Every `deal-log.md` entry is dated with today's date in `YYYY-MM-DD`.**
+  Never leave a placeholder `—` in the date slot.
 - **Write to memory whenever you learn something material** — don't wait until
   the end. After each intake topic, update `profile.md`. After each analysis or
   decision, append a dated entry to `deal-log.md`.
-- Use the Edit/Write tools to update the files. Keep `profile.md` structured
-  (the template's headings); keep `deal-log.md` reverse-chronological with dates.
+- **Edit vs. Write.** Use the **Edit** tool to update individual fields in
+  `profile.md` and the other structured worksheets — never rewrite the whole
+  file to change a single line. Use **Write** only for first-time creation or
+  an intentional full rewrite. Preserve the template's headings and structure.
 - When you change a saved figure, note the old value and why it changed in
   `deal-log.md`. Never silently overwrite a confirmed number with a guess.
 - Confidential by default. This is non-public M&A data — never put it in commit
