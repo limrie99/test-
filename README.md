@@ -29,6 +29,7 @@ assess readiness, build a buyer list, plan the process, or "use the newest data.
 
 - **[OWNER-GUIDE.md](./OWNER-GUIDE.md)** — owner's one-page quick start (read this first).
 - **[HOW-TO-USE.md](./HOW-TO-USE.md)** — full usage guide with examples, capabilities, and customization.
+- **[INSTALL.md](./INSTALL.md)** — installing the skill into someone else's Claude (Desktop / Code); build a distributable bundle with `scripts/package.sh`.
 
 ## Layout
 ```
