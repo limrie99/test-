@@ -27,9 +27,8 @@ is no separate web app to install or launch.
 Ask Claude to run the **`scp-ma-agent`** skill — or just ask it to value SCP,
 assess readiness, build a buyer list, plan the process, or "use the newest data."
 
-**See [HOW-TO-USE.md](./HOW-TO-USE.md) for the full owner-facing guide** —
-starting a session, uploading documents, what to ask for, refreshing market
-data, where saved data lives, confidentiality, and customizing the agent.
+- **[OWNER-GUIDE.md](./OWNER-GUIDE.md)** — owner's one-page quick start (read this first).
+- **[HOW-TO-USE.md](./HOW-TO-USE.md)** — full usage guide with examples, capabilities, and customization.
 
 ## Layout
 ```
