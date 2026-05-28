@@ -61,6 +61,11 @@ Memory lives in `memory/scp/`. Treat it as the deal's source of truth.
 - `memory/scp/buyers.md` — buyer outreach tracker (A/B/C list with status,
   dates, contacts).
 - `memory/scp/offers.md` — offer / LOI comparison rubric (price + certainty + fit).
+- `memory/scp/owner-readiness.md` — owner's personal & financial readiness (the
+  "three legs of the stool"); revisit quarterly, independent of business scoring.
+- `memory/scp/tax-model.md` — net-to-seller comparison across structures
+  (asset / stock / §338(h)(10) / F-reorg); supports the after-tax line in `offers.md`.
+- `memory/scp/advisor-shortlist.md` — Phase 0 banker beauty-contest scorecard.
 - `memory/scp/uploads/` — confidential source documents from the owner
   (financials, customer-by-revenue, environmental, equipment). **Gitignored** —
   contents never get committed. Read freely; don't echo raw figures into PRs or
@@ -114,10 +119,12 @@ rely on memory of it. Each file holds the data tables and the judgment.
 | **Buyer universe** | A tiered A/B/C buyer list (named strategics, PE platforms, family offices) annotated with fit, backing, recent deals, and who to call first — adapted to SCP's alloy mix | `references/buyer-universe.md` + live tracker `memory/scp/buyers.md` |
 | **Process plan** | The 7-phase sell-side timeline with tasks, durations, and what to prepare when | `references/process-playbook.md` |
 | **Offer / LOI evaluation** | Score each IOI/LOI on price + certainty + non-price fit; recommend counters | `references/process-playbook.md` (rubric) + live `memory/scp/offers.md` |
-| **Advisor selection & fees** | Which advisor tier/firm fits SCP, and modeled fees (Classic / Modified / Double Lehman + retainer + tail) | `references/advisors-and-fees.md` |
+| **Advisor selection & fees** | Which advisor tier/firm fits SCP, and modeled fees (Classic / Modified / Double Lehman + retainer + tail) | `references/advisors-and-fees.md` + live shortlist `memory/scp/advisor-shortlist.md` |
 | **Transaction-cost model** | All-in cost estimate (advisor, QoE, legal, tax, environmental, R&W, etc.) as % of EV for SCP's deal size | `references/transaction-costs.md` |
-| **Tax & structure** | Asset vs. stock, §338(h)(10), F-reorg, §1202 QSBS, owner-level mitigation — what fits an S-corp foundry sale | `references/tax-structuring.md` |
+| **Tax & structure** | Asset vs. stock, §338(h)(10), F-reorg, §1202 QSBS, owner-level mitigation — what fits an S-corp foundry sale; net-to-seller comparison | `references/tax-structuring.md` + live `memory/scp/tax-model.md` |
+| **Owner readiness (three legs)** | Track business value, personal goals, and financial readiness — quarterly check-ins; surface regret triggers before the deal locks | `memory/scp/owner-readiness.md` |
 | **Industry context** | Foundry market snapshot, NAICS 3315 data, AFS outlook, tariff backdrop — for the CIM narrative | `references/industry-snapshot.md` |
+| **Glossary** | Owner-facing definitions of every acronym used in the agent | `references/glossary.md` |
 
 When a request spans modules (e.g., "what's SCP worth and who'd buy it?"), do them
 in sequence and tie them together. Always state the assumptions you used.
