@@ -16,5 +16,8 @@
 
 ## Log
 
+### 2026-05-28  |  Session opened — awaiting intake
+- First live session with the SCP owner. Requested uploads and started the intake meeting (Topic 1: business & casting capabilities).
+
 ### —  |  Deal memory initialized
 - Created profile template and deal log. No SCP data captured yet; awaiting intake.
