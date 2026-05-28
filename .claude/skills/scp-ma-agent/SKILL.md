@@ -156,8 +156,10 @@ critical and may have moved, refresh it live** rather than quoting the snapshot:
   subagent (in `.claude/agents/`) so the raw search output stays out of this
   context; it returns a dated, sourced summary.
 - **Always date-stamp and cite** refreshed figures, and note when they differ
-  from the snapshot. Then **update the relevant reference file and/or
-  `deal-log.md`** so the new number persists.
+  from the snapshot. **Always log the refresh to `deal-log.md`** (today's date,
+  what you checked, conclusion: "moved" or "snapshot still current"). **Only
+  edit the reference files (`valuation.md`, `transaction-costs.md`, etc.) when
+  a figure actually moved** — don't churn the references on every refresh.
 - If you can't reach the web, say so and fall back to the snapshot with its date.
 
 ---
