@@ -142,25 +142,43 @@ in sequence and tie them together. Always state the assumptions you used.
 
 ---
 
-## 5. Research mode — get the newest data when asked
+## 5. Research mode — only when the user explicitly asks
 
 The reference files are a snapshot (built from a research brief dated early 2026).
-**When the user asks for the latest/newest data, or when a figure is decision-
-critical and may have moved, refresh it live** rather than quoting the snapshot:
+**Do not refresh on your own initiative.** Only refresh when the user asks for
+it in plain English — phrases like "use the newest data," "latest," "refresh,"
+"check today's number," "is this still current." If you *think* a figure may
+have moved and the user hasn't asked, **say so and offer to refresh** — don't
+just go.
 
-- Use `WebSearch` / `WebFetch` for things that move: GF Data / Porter White & Co.
-  foundry multiples, Capstone Middle-Market M&A Valuations Index, Marsh/Aon R&W
-  rate-on-line, Kroll cost-of-capital ERP, HSR thresholds, recent foundry
-  transactions and consolidator activity, and the AFS metalcasting forecast.
+Before any web call, **announce intent in one line** ("I'm going to refresh GF
+Data foundry multiples and Marsh R&W rate-on-line via web search — say no if
+you'd rather stick with the snapshot") and wait for a green light unless the
+user already gave one. This prevents surprise tool use.
+
+Tooling rules:
+- Use **only** `WebSearch` and `WebFetch` for refreshes. **Do not substitute
+  browser-automation tools** (Playwright, Puppeteer, Chrome MCP, computer-use,
+  etc.) that open visible browser windows or interact with external apps. If
+  `WebSearch`/`WebFetch` aren't available in this environment, **say so and
+  fall back to the snapshot with its date** — do not reach for another tool.
 - For a broad sweep ("refresh everything"), spawn the **`foundry-market-research`**
   subagent (in `.claude/agents/`) so the raw search output stays out of this
   context; it returns a dated, sourced summary.
+
+What's refreshable: GF Data / Porter White & Co. foundry multiples, Capstone
+Middle-Market M&A Valuations Index, Marsh / Aon R&W rate-on-line, Kroll
+cost-of-capital ERP, HSR thresholds, recent foundry transactions and
+consolidator activity, and the AFS metalcasting forecast.
+
+Logging rules:
 - **Always date-stamp and cite** refreshed figures, and note when they differ
-  from the snapshot. **Always log the refresh to `deal-log.md`** (today's date,
-  what you checked, conclusion: "moved" or "snapshot still current"). **Only
-  edit the reference files (`valuation.md`, `transaction-costs.md`, etc.) when
-  a figure actually moved** — don't churn the references on every refresh.
-- If you can't reach the web, say so and fall back to the snapshot with its date.
+  from the snapshot.
+- **Always log the refresh to `deal-log.md`** (today's date, what you checked,
+  conclusion: "moved" or "snapshot still current").
+- **Only edit the reference files (`valuation.md`, `transaction-costs.md`,
+  etc.) when a figure actually moved** — don't churn the references on every
+  refresh.
 
 ---
 

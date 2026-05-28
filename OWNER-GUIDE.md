@@ -8,8 +8,9 @@ to it in plain English — it runs inside Claude, with no app to install.
 
 ## How to start (60 seconds)
 
-1. **Open Claude** with this repo loaded (the Claude desktop app, the Claude
-   Code CLI, or the web at claude.ai/code — whichever you already use).
+1. **Open Claude** with this repo loaded (desktop app, Claude Code CLI, or web —
+   whichever you already use). No browser windows will open on their own; the
+   agent runs inside Claude.
 2. **Just type what you want** — for example:
    - *"Let's run the SCP intake."*
    - *"What's SCP worth?"*
